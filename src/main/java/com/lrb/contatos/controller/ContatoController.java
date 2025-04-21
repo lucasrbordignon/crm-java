@@ -17,7 +17,7 @@ public class ContatoController {
   @Autowired
   private ContatoService service;
 
-  @GetMapping("/")
+  @GetMapping
   public List<Contato> listarContatos() {
     return service.listarContatos();
   }

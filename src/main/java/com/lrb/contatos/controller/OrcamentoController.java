@@ -2,6 +2,7 @@ package com.lrb.contatos.controller;
 
 import com.lrb.contatos.model.Orcamento;
 import com.lrb.contatos.service.OrcamentoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,6 +13,7 @@ import java.util.Optional;
 @RequestMapping("/orcamentos")
 public class OrcamentoController {
 
+  @Autowired
   private OrcamentoService service;
 
   @GetMapping("/contato/{contatoId}")
